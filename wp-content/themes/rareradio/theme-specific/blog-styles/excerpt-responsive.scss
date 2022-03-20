@@ -1,0 +1,163 @@
+@import "../../css/_mixins.scss";
+@import "../../css/_theme-vars.scss";
+
+
+	@media #{$media_xl} {
+		/* Blog layout: Excerpt */
+		.post_layout_excerpt.sticky {
+			padding: 2.75em 2.8em;
+		}
+		.post_item .more-link, 
+		.gallery_preview_show .post_readmore {
+			padding: 1.37em 3em;
+		}
+		.post_layout_excerpt .slider_container.slider_pagination_pos_bottom .swiper-pagination-bullets, 
+		.post_layout_excerpt .slider_outer.slider_outer_pagination_pos_bottom .swiper-pagination-bullets, 
+		.post_layout_excerpt .slider_outer.slider_outer_pagination_pos_bottom_outside .swiper-pagination-bullets {
+			bottom: 2.27778em;
+		}
+		.post_layout_excerpt.format-audio .post_featured.with_thumb .post_audio {
+			left: 34%;
+			width: calc(100% - 41.5%);
+		}
+		.format-audio .post_featured.with_thumb {
+			min-height: 200px;
+		}
+	}
+
+
+@media #{$media_lg} {
+	/* Blog layout: Excerpt */
+	.post_layout_excerpt .post_header .post_price {
+		@include font(2em, 1.5em);
+	}
+	.post_layout_excerpt.sticky {
+		padding: 2.5em 2.5em;
+	}
+	.sticky .label_sticky {
+		margin-right: 12px;
+		font-size: 11px;
+	}
+	.post_meta .post_meta_item, .post_meta .vc_inline-link {
+		margin-right: 12px;
+	}
+	.post_meta .post_meta_item.post_categories a {
+		margin: 0 12px 12px 0;
+	}
+	.post_layout_excerpt .post_header + .post_content {
+		margin-top: 20px;
+	}
+	.post_layout_excerpt.post_item .more-link {
+		padding: 1.37em 3em;
+	}
+	.post_layout_excerpt + .post_layout_excerpt {
+		margin-top: 6.1rem;
+	}
+	.post_layout_excerpt + .post_layout_excerpt:not(.sticky) {
+		padding-top: 6.1rem;
+	}
+	.post_header_date {
+		top: 0;
+	}
+	.post_header_date .post_meta .post_meta_item.post_date a {
+		font-size: 26px;
+	}
+	.post_featured {
+		margin-bottom: 1.8em;
+	}
+	.post_layout_excerpt.format-audio .post_featured .post_audio_title {
+		font-size: 24px;
+	}
+	.post_layout_excerpt.format-audio .post_featured .post_audio_author {
+		font-size: 16px;
+	}
+}
+
+
+@media #{$media_md} {
+	/* Blog layout: Excerpt */
+	.post_layout_excerpt .post_header .post_price {
+		@include font(1.75em, 1.5em);
+	}
+}
+
+
+@media #{$media_sm} {
+	/* Blog layout: Excerpt */
+	.post_layout_excerpt.sticky {
+		padding: 2em;
+	}
+	.post_layout_excerpt + .post_layout_excerpt:not(.sticky) {
+		padding-top: 3rem;
+	}
+	.post_layout_excerpt + .post_layout_excerpt {
+		margin-top: 3rem;
+	}
+	.post_header_date {
+		top: 0;
+	}
+	.post_header_date .post_meta .post_meta_item.post_date a {
+		font-size: 18px;
+	}
+	.post_layout_excerpt .post_header .post_price {
+		position:static;
+		right: auto;
+		top: auto;
+		margin-top:0.3em;
+	}
+	.post_layout_excerpt .slider_container.slider_pagination_pos_bottom .swiper-pagination-bullets, 
+	.post_layout_excerpt .slider_outer.slider_outer_pagination_pos_bottom .swiper-pagination-bullets, 
+	.post_layout_excerpt .slider_outer.slider_outer_pagination_pos_bottom_outside .swiper-pagination-bullets {
+		bottom: 31px;
+	}
+	.post_layout_excerpt.post_format_audio .post_featured.with_thumb img {
+		display: none;
+	}
+	.format-audio .post_featured .post_audio_img {
+		width: 40%;
+	}
+	.post_layout_excerpt.format-audio .post_featured.with_thumb .post_audio {
+		left: 46.5%;
+   		width: calc(100% - 53%);
+	}
+	.post_content_inner {
+		font-size: 17px;
+	}
+}
+
+
+@media #{$media_xs} {
+	/* Blog layout: Excerpt */
+	.post_layout_excerpt.sticky {
+		padding: 1.5em;
+	}
+	.post_header_date .post_meta .post_meta_item.post_date a {
+		font-size: 13px;
+	}
+	.post_layout_excerpt.format-audio .post_featured .post_audio_title {
+		font-size: 18px;
+	}
+	.post_layout_excerpt .slider_container.slider_pagination_pos_bottom .swiper-pagination-bullets, 
+	.post_layout_excerpt .slider_outer.slider_outer_pagination_pos_bottom .swiper-pagination-bullets, 
+	.post_layout_excerpt .slider_outer.slider_outer_pagination_pos_bottom_outside .swiper-pagination-bullets {
+		bottom: 25px;
+	}
+	.post_content_inner {
+		font-size: 16px;
+	}
+	.format-audio .post_featured .post_audio_img {
+		position: relative;
+		height: 150px;
+		width: 100%;
+	}
+	.post_layout_excerpt.post_format_audio .post_featured.with_thumb {
+		flex-direction: column;
+	}
+	.post_layout_excerpt.format-audio .post_featured.with_thumb .post_audio {
+		left: auto;
+		width: calc(100% - 2em);
+		right: auto;
+		padding: 1em;
+		bottom: auto;
+	}
+}

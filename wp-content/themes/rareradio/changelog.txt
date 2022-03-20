@@ -1,0 +1,70 @@
+Version 1.0.5
+	Added:
+		- WP 5.8.2 compatibility
+	Fixed:
+		- Update plugins to their latest versions
+	Changed:
+		- Update demo data
+
+Version 1.0.5
+	Added:
+		- WP 5.8 compatibility
+		- PHP 8.0 compatibility
+
+	Fixed:
+		- Update plugins to their latest versions
+		- Improve theme styles
+
+	Changed:
+		- Update demo data
+
+Version 1.0.4
+	Added:
+		- WP 5.7.2 compatibility
+
+	Fixed:
+		- Update plugins to their latest versions
+
+	Changed:
+		- Update demo data
+
+Version 1.0.3
+	Added:
+		- WP 5.6.1 compatibility
+		- ThemeREX Socials plugin
+
+	Fixed:
+		- Update plugins to their latest versions
+		- Improve theme styles
+
+	Changed:
+		- Update demo data
+
+	Removed:
+		- Instagram Feed plugin
+
+Version 1.0.2
+	Added:
+		- WP 5.5.1 compatibility
+		- PHP 7.4 compatibility
+		- ThemeREX Updater plugin
+		- elegro Crypto Payment plugin
+
+	Fixed:
+		- Update plugins to their latest versions
+
+	Changed:
+		- Update demo data
+
+Update 1.0.1
+	Fix
+		- Themerex Addons vulnarability fixed
+
+
+Release 1.0
+	- Plugin TRX Addons has been edited:
+		wp-content\plugins\trx_addons\components\widgets\audio\audio.php (39,52-54,58,103,104,121-124,133-136,147-156,298-313)
+		wp-content\plugins\trx_addons\components\widgets\audio\audio-sc.php (27)
+		wp-content\plugins\trx_addons\components\widgets\audio\audio-sc-elementor.php (116-126,159,172,184,196,208,222,236,266-269,319-355,)
+		wp-content\plugins\trx_addons\components\api\the-events-calendar\the-events-calendar-sc-elementor.php (98)
+		wp-content\plugins\trx_addons\components\includes\plugin.media.php (793 - 811)

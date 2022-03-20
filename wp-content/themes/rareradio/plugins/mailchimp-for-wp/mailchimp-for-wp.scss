@@ -1,0 +1,62 @@
+/* MailChimp for WP styles
+----------------------------------------------------------------- */
+
+@import "../../css/_mixins.scss";
+@import "../../css/_theme-vars.scss";
+
+form.mc4wp-form {
+	position:relative;
+}
+form.mc4wp-form .mc4wp-form-fields input[type="email"] {
+	width: 100%;
+	vertical-align:top;
+	@include border-box;
+	padding-right: 14em;
+}
+form.mc4wp-form .mc4wp-form-fields button[type="submit"],
+form.mc4wp-form .mc4wp-form-fields input[type="submit"] {
+	@include abs-rt;
+	bottom: 0;
+	max-width: 13em;
+	padding: 1.64em 2.5em;
+	opacity: 1;
+	height: 100%;
+	display: block;
+}
+
+form.mc4wp-form .mc4wp-alert {
+	margin: 1.5em 0;
+	padding: 1em;
+	line-height:1.5em;
+}
+
+form.mc4wp-form p {
+	margin: 0;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+form.mc4wp-form p + p,
+form.mc4wp-form input + p {
+	margin-top: 1.75em;
+}
+form.mc4wp-form p + label,
+form.mc4wp-form input + label {
+    margin-top: 1.75em;
+    display: block;
+}
+form.mc4wp-form label > input[type="checkbox"] {
+	position: absolute;
+    opacity: 0;
+    left: 0;
+}
+form.mc4wp-form label .wpcf7-list-item-label:before {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    top: -1px;
+}
+form.mc4wp-form input[type="checkbox"] + .wpcf7-list-item-label {
+	padding-left: 2.4em;
+}

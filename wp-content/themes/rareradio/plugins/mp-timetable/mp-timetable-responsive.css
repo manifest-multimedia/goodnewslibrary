@@ -1,0 +1,106 @@
+@media (max-width: 1439px) {
+  /* MP Time Table */
+  .mp_custom_view .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container:hover .mptt-inner-event-content {
+    padding: 30px 30px 30px;
+  }
+
+  .mp_custom_view .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container:hover .event-title {
+    font-size: 26px;
+  }
+
+  .mp_custom_view .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container:hover .event-description {
+    margin-top: 17px;
+  }
+}
+@media (max-width: 1279px) {
+  /* MP Time Table */
+  .post_type_mp-event .timeslot {
+    width: 32.3333%;
+  }
+
+  .mptt-shortcode-wrapper .mptt-shortcode-table tr.mptt-shortcode-row th {
+    font-size: 14px;
+  }
+
+  .mptt-shortcode-wrapper .mptt-inner-event-content {
+    padding: 4px 12px;
+  }
+
+  .mp_custom_view .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container:hover .mptt-inner-event-content {
+    padding: 20px 25px 25px;
+    width: 280px;
+    max-width: 280px;
+  }
+
+  .mp_custom_view .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container:hover .event-title {
+    font-size: 24px;
+  }
+
+  .mp_custom_view .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container:hover .event-description {
+    margin-top: 12px;
+  }
+
+  .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .event-title {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1279px) {
+  /* MP Time Table */
+  .post_type_mp-event .timeslot {
+    width: 48%;
+  }
+}
+@media (max-width: 1023px) {
+  /* MP Time Table */
+  .mptt-shortcode-wrapper table.mptt-shortcode-table {
+    border-spacing: 5px;
+  }
+
+  .mptt-shortcode-wrapper .mptt-shortcode-table tr.mptt-shortcode-row th {
+    font-size: 12px;
+    padding: 0.9em 0.4em;
+  }
+
+  .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .timeslot {
+    font-size: 11px;
+  }
+
+  .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .event-title {
+    font-size: 13px;
+  }
+
+  .mp_custom_view .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container:hover .mptt-inner-event-content {
+    padding: 15px 20px 20px;
+    width: 220px;
+    max-width: 220px;
+  }
+
+  .mp_custom_view .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container:hover .event-title {
+    font-size: 22px;
+  }
+
+  .mp_custom_view .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container:hover .event-description {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  /* MP Time Table */
+  .mptt-shortcode-wrapper .mptt-shortcode-list .mptt-column .mptt-events-list {
+    margin: 2rem 0;
+  }
+
+  .mptt-shortcode-wrapper .mptt-shortcode-list .mptt-column .mptt-events-list .mptt-list-event {
+    margin-bottom: 1.7rem;
+    padding: 0 0 0 1.2rem;
+  }
+}
+@media (max-width: 479px) {
+  /* MP Time Table */
+  .post_type_mp-event .timeslot {
+    width: 100%;
+    margin: 0 0 1em 0;
+  }
+}
+
+/*# sourceMappingURL=mp-timetable-responsive.css.map */

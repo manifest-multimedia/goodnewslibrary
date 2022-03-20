@@ -1,0 +1,140 @@
+/* MP Timetable styles
+----------------------------------------------------------------- */
+
+@import "../../css/_mixins.scss";
+@import "../../css/_theme-vars.scss";
+
+/* Table */
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container {
+	background-color: inherit;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .mptt-inner-event-content {
+	max-width: 100%;
+	hyphens: auto;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container,
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .mptt-inner-event-content {
+	@include transition-colors;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .event-title {
+	@include font(1em, 1.25em);
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container:hover .event-title {
+	text-decoration:none;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .event-title,
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .event-description {
+	margin: 0;
+	padding: 4px;
+	max-width: 100%;
+	@include border-box;
+}
+.mptt-shortcode-wrapper table.mptt-shortcode-table {
+	border-spacing: 10px;
+	border-collapse: separate;
+	table-layout: fixed;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tr.mptt-shortcode-row th {
+	border: none;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody td {
+	border: none;
+	font-size: 0.8889em;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody tr:nth-child(2n+2) {
+    background-color: transparent;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tr.mptt-shortcode-row th {
+	font-size: rem(16px);
+	line-height: normal;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 1em 0.625em;
+}
+.mptt-shortcode-wrapper .mptt-inner-event-content {
+	text-align: left;
+	display: flex;
+    flex-direction: column;
+	padding: 6px 15px;
+	background: inherit;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .event-title {
+    font-size: rem(16px);
+	line-height: 1.22em;
+	padding: 0;
+	transition: none;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .timeslot {
+	font-size: rem(16px);
+	margin: 0;
+	order: -1;
+} 
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .event-description {
+	font-size: rem(16px);
+	line-height: 1.375em;
+	padding: 0;
+	opacity: 0;
+	margin-top: 15px;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container:hover .event-description {
+	opacity: 1;
+}
+/* mp_custom_view */
+.mp_custom_view .mptt-shortcode-wrapper ul.mptt-menu.mptt-navigation-tabs {
+	display: none;
+}
+.mp_custom_view .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container:hover .mptt-inner-event-content {
+	position: absolute;
+	width: 326px;
+	max-width: 326px;
+	min-height: 100%;
+	padding: 30px 39px 34px;
+}
+.mp_custom_view .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container:hover .event-title {
+	font-size: rem(30px);
+	line-height: 1.23em;
+	font-weight: 900;
+}
+.mp_custom_view .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container:hover .event-description {
+	margin-top: 27px;
+}
+.mp_custom_view .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container {
+	transition: none;
+}
+.mp_custom_view .mptt-shortcode-wrapper table tr td:nth-last-of-type(2):not(:first-child):not(:nth-child(2)) .mptt-event-container:hover .mptt-inner-event-content,
+.mp_custom_view .mptt-shortcode-wrapper table tr td:last-child:not(:first-child):not(:nth-child(2)) .mptt-event-container:hover .mptt-inner-event-content {
+    right: 0;
+}
+.post_type_mp-event .timeslot .timeslot-description {
+	font-style: normal;
+}
+.post_type_mp-event .post_bottom_row {
+	display: none;
+}
+.post_type_mp-event .timeslot {
+	float: none;
+	display: inline-block;
+	vertical-align: top;
+	width: 23%;
+}
+.post_type_mp-column .post_bottom_row {
+	display: none;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+	.mptt-shortcode-wrapper table td {
+		height: 60px !important;
+    	padding-top: 30px !important;
+    	padding-bottom: 30px !important;
+	}
+}
+.post_type_mp-column .event-description {
+	font-style: normal;
+	display: inline;
+}
+
+
+/* Slots in the single event */
+.post_type_mp-event .timeslot {
+	@include transition-colors;
+}
